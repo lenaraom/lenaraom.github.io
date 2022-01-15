@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	background-color: #333;
+}
+ 
+.preloader-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.preloader {
+	width: 100px;
+	height: 100px;
+	border-radius: 10em;
+	border: 12px solid #ccc;
+	border-top: 12px solid tomato;
+	animation: preloaderAnimation 2s linear infinite; 
+}
+
+@keyframes preloaderAnimation {
+	0% {
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+	}
+
+	100%{
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	}
+}
+
+.loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+.loaded .preloader {
+    display: none;
+}
+
+
+
+
+/*window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+};
+*/

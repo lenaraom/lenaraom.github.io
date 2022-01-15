@@ -1,13 +1,14 @@
-window.onscroll = function showHeader() {
+$(function(){
+	$(".head_inner nav ul li.switch a").on("click", function(e){
+		$("body").toggleClass("switchMode");
+		e.preventDefault();
+	});
+}); 
 
-    var header = document.querySelector('.navbar');
-
-    if (window.pageYOffset > 50) {
-        header.classList.add('navbar_fixed');
-    } else {
-        header.classList.remove('navbar_fixed');
-    }
-}
+window.onload = function() {
+	let mask = document.getElementById('mask');
+	mask.style.display = 'none';
+};
 
 $(document).ready(function() {
 
@@ -29,3 +30,5 @@ $(document).ready(function() {
 	});
 
 });
+
+
