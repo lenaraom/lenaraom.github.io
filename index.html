@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbungswebseite von Lenara Khamitova</title>
+    <!-- <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.js">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#intro" class="navbar-name">Webseite von Lenara Khamitova</a>
+
+            <ul class="navbar-menu">
+                <li><a href="#about-me">ÜBER MICH</a></li>
+                <li><a href="#resume">LEBENSLAUF</a></li>
+                <li><a href="#feedback">IHR FEEDBACK</a></li>
+            </ul>
+            <!-- /.navbar-menu -->
+
+            <div class="symb">
+                <a href="#" class="night-mode">button</a>
+                <a href="#" class="language">EN</a>
+            </div>
+
+        </div>
+    </header>
+    <!-- header -->
+
+    <section id="intro">
+        <div class="text">
+            <p class="main-presentation">Hallo, ich bin <span>Lenara</span></p>
+            <p class="presentation">und hier bekommen Sie mehr</p>
+            <p class="presentation"> Informationen über mich!</p>
+
+            <button class="contact-button">Kontaktieren Sie mich</button>
+        </div>
+
+        <div class="image">
+            <img src="img/circle.png">
+            <img src="img/main2.jpg" alt="Ein Foto von mir" class="round">
+        </div>
+    </section>
+    <!-- intro -->
+
+    <div class="wrapper">
+    
+        <section id="about-me">
+            <h2>Über mich</h2>
+            <div class="content">
+
+                <div class="first">
+
+                    <div id="slider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider" data-slide-to="1"></li>
+                            <li data-target="#slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/main3.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/main4.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/main5.jpg" alt="" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                
+                </div>
+
+                <div class="second">
+                    <p>Mein Name ist <em>Lenara Khamitova</em>, geboren am 18. Februar 2002 in Ufa, Russland. Nachdem ich die Schule in meinem Heimatland beendet hatte, beschloss ich, mein Studium in Deutschland fortzusetzen.</p>
+
+                    <p>Inzwischen lebe ich seit fast einem Jahr hier. Dank des erfolgreichen Abschlusses des Studienkollegs mit dem Schwerpunkt Technik an der Fachhochschule Kiel und des Kennenlernens von Menschen aus verschiedenen Ländern haben sich meine Sprachkenntnisse verbessert. Außerdem brachte mir die Zeit ohne meine Familie mehr Selbständigkeit und Stärke, wodurch ich mich persönlich weiterentwickeln konnte.</p>
+
+                    <p>Während dieser Ausbildungszeit habe ich meine Kenntnisse in relevanten Fächern, wie Deutsch, Mathematik, Technische Kommunikation und Informatik weitervertieft.</p>
+
+                    <p>Meine eigene Webseite sehe ich als eine gute Möglichkeit, mich als Person vorzustellen, und Ihnen die Chance zu bieten, mich näher kennenzulernen.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- about me -->
+        
+        <section id="resume">
+            <h2>Lebenslauf</h2>
+            <div class="row">
+                <div id="list-example" class="list-group col-3,5">
+                    <a class="list-group-item list-group-item-action active" href="#list-item-1"><img src="icons/study.png" alt="" height="30">Ausbildung</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2"><img src="icons/coding-language.png" alt="" height="30">Programmierkenntnisse</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3"><img src="icons/foreign-language.png" alt="" height="30">Sprachkenntnisse</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4"><img src="icons/programing.png" alt="" height="30">PC-Kenntnisse</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5"><img src="icons/artist.png" alt="" height="30">Freizeitbeschäftigung</a>
+                  </div>
+                  <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col border p-3 rounded">
+                    <h3 id="list-item-1">Ausbildung</h3>
+                    <ul>
+                        <li><p><strong><span>2021 </span>Studienkolleg TI-Kurs an der FH Kiel (Kiel, Deutschland)</strong></p>
+                          Abschluss:  fachgebundene Fachhochschulreife <br> Durchschnittsnote vom Zeugnis: 1,8</li>
+                        <li><p><strong><span>2019-2020 </span>Schule "Harmonie" (Ufa, Russland)</strong></p>
+                        Abschluss: Abitur<br>Durchschnittsnote vom Zeugnis: 1,0</li>
+                        <li><p><strong><span>2009-2019 </span>Gymnasium №39 (Ufa, Russland)</strong></p></li>
+                    </ul>
+        
+                    <h3 id="list-item-2">Programmierkenntnisse</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
+                        <li>C++</li>
+                        <li>Pascal</li>
+                    </ul>
+
+                    <h3 id="list-item-3">Sprachkenntnisse</h3>
+                        <ul>
+                            <li><strong>Russisch</strong> - Muttersprache</li>
+                            <li><strong>Deutsch</strong> - verhandlungssicher</li>
+                            <li><strong>Englisch</strong> - sehr gut in Wort und Schrift</li>
+                            <li><strong>Französisch</strong> - Grundkenntnisse</li>
+                        </ul>
+
+                    <h3 id="list-item-4">PC-Kenntnisse</h3>
+                    <ul>
+                        <li>Microsoft Office (Excel, PowerPoint, Word)</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe.xd</li>
+                        <li>Paint Tool SAI Ver. 1, Ver. 2</li>
+                    </ul>
+
+                    <h3 id="list-item-5">Freizeitbeschäftigung</h3>
+                    <ul>
+                        <li>Programmieren</li>
+                        <li>Guitarre spielen</li>
+                        <li>Digital und traditionell zeichnen</li>
+                        <li>Joggen</li>
+                    </ul>
+
+                  </div>
+                  
+            </div>
+        </section>
+        <!-- resume -->
+    
+        <section id="feedback">
+            <h2>Kontaktieren Sie mich</h2>
+            <form action="mail.php" method="POST" class="contactme">
+                <input type="text" class="field field-text" placeholder="Name" name="user_name">
+
+                <input type="e-mail" class="field field-text" placeholder="E-mail" name="user_email">
+
+                <input type="text" class="field field-text" placeholder="Betreff" name="subject">
+                    
+                <textarea class="field" cols="30" rows="10" placeholder="Nachricht" name="message"></textarea>
+
+                <button type="submit" class="btn" name="submit">Senden</button>
+            </form>
+        </section>
+        <!-- feedback -->
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <div class="name">Lenara Khamitova</div>
+                <div class="email">lenara.khami@gmail.com</div>
+                <div class="mobile-tel">+49 17676284192</div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
