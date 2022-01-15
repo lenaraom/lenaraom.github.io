@@ -167,16 +167,16 @@
     
         <section id="feedback">
             <h2>Kontaktieren Sie mich</h2>
-            <form action="mail.php" method="POST" class="contactme">
-                <input type="text" class="field field-text" placeholder="Name" name="user_name">
-
-                <input type="e-mail" class="field field-text" placeholder="E-mail" name="user_email">
-
-                <input type="text" class="field field-text" placeholder="Betreff" name="subject">
-                    
-                <textarea class="field" cols="30" rows="10" placeholder="Nachricht" name="message"></textarea>
-
-                <button type="submit" class="btn" name="submit">Senden</button>
+            <form action="">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Bewerbungsseite">
+                <input type="hidden" name="admin_email" value="lenara.khami@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+                <input name="name" type="text" placeholder="Ihr Name">
+                <input name="e-mail" type="text" placeholder="Ihre E-Mail Adresse">
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+                <button id="butt" type="submit">Senden</button>
             </form>
         </section>
         <!-- feedback -->
